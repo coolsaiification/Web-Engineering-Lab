@@ -1,0 +1,111 @@
+.content{
+  font-size: 1em;
+}
+
+.logo{
+  padding: 10px;
+}
+
+h3{
+  font-size: 25px;
+  color: red;
+}
+
+ol>li {
+  padding: 10px;
+  margin: 10px;
+    background-color:  #e9e9e9;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+header, footer{
+  padding: 10px;
+  background-color: #e9e9e9;
+  color: red;
+}
+.left {
+  text-align: center;
+  display: inline;
+}
+
+.right {
+  float: right;
+  text-align: center;
+  display: inline;
+}
+#main {
+    width: 100%;
+    margin: 0 auto;
+}
+#side    {
+    width: 30%;
+    height: 150px;
+    float: left;
+}
+
+#desc  {
+  padding: 10px;
+  font-size: 20px;
+    background: #ffffff;
+    height: 150px;
+    margin-left: 30%;
+}
+
+/* Add a black background color to the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.book-image{
+  float:left;
+  width:150px;
+  height:150px;
+  margin-right: 50px;
+}
