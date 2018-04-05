@@ -1,0 +1,41 @@
+.content{
+  font-size: 1em;
+}
+
+h3{
+  font-size: 25px;
+  color: red;
+}
+
+ol>li {
+  padding: 10px;
+  margin: 10px;
+    background-color:  #e9e9e9;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+}
+#side    {
+    width: 30%;
+    height: 150px;
+    float: left;
+}
+
+#desc  {
+  padding: 10px;
+  font-size: 20px;
+    background: #ffffff;
+    height: 150px;
+    margin-left: 30%;
+}
+
+.book-image{
+  float:left;
+  width:150px;
+  height:150px;
+  margin-right: 50px;
+}
