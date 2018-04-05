@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BooksMart</title>
+    <link rel="stylesheet" href="STATIC/CSS/form.css">
+    <link rel="stylesheet" href="STATIC/CSS/style.css">
+</head>
+<body>
+<header>
+  <img class="logo left" height="50" width="50" src="ASSETS/logo.jpg">
+  <h1 class="right"> BOOKS MART </h1>
+</header>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a class="active" href="#">Contact</a>
+  <input type="text" placeholder="Search..">
+</div>
+<h3 id="heading">Request a book</h3>
+<form class="highlight" action="confirmation.jsp" method="GET">
+    <span class="head">Name:</span><br>
+    <input class="greenTF" type="text" name="name" size="35" required>
+    <br><br>
+    <span class="head">Email:</span><br>
+    <input class="greenTF" type="email" name="email" size="35" required>
+    <br><br>
+    <span class="head">Phone:</span><br>
+    <input class="greenTF" type="number" name="phone" size="35" required>
+    <br><br>
+    <span class="head">Book name:</span><br>
+    <input class="greenTF" class="text-input" type="text" name="book" size="35">
+    <br><br>
+    <span class="head">Age group:</span><br><br>
+    <label class="container">less than 10
+      <input type="radio" checked="checked" name="radio" value="1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">10 to 20
+      <input type="radio" name="radio" value="2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">20 to 30
+      <input type="radio" name="radio" value="3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">30 to 50
+      <input type="radio" name="radio" value="4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">more than 50
+      <input type="radio" name="radio" value="5">
+      <span class="checkmark"></span>
+    </label>
+    <br>
+    <input class="button" id="submit" type="submit" value="Submit">
+</form>
+<footer>
+    <span>Developed by: Sai</span>
+    <span>Contact information: <a href="mailto:l.sainarayanan@gmail.com">l.sainarayanan@gmail.com</a>.</span>
+  </footer>
+</body>
+</html>
