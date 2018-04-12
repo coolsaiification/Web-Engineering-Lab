@@ -28,9 +28,9 @@ ol>li {
 #desc  {
   padding: 10px;
   font-size: 20px;
-    background: #ffffff;
-    height: 150px;
-    margin-left: 30%;
+  background: #ffffff;
+  height: 150px;
+  margin-left: 30%;
 }
 
 .book-image{
@@ -38,4 +38,27 @@ ol>li {
   width:150px;
   height:150px;
   margin-right: 50px;
+}
+.quantity {
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #e4d2b8;
+  padding: 10px;
+  border-radius: 15px;
+}
+.total-amt{
+  background-color: grey;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 23px;
+}
+#discount{
+  display: none;
+  color: #FF0000;
+  text-align: center;
 }

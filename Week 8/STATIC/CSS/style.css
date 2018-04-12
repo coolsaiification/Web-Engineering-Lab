@@ -57,7 +57,7 @@ header, footer{
     font-size: 17px;
 }
 
-.button {
+.button, .button-remove {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -68,6 +68,10 @@ header, footer{
     margin-top: 10px;
 }
 
+.button-remove{
+  background-color: #FF0000; /* red */
+  display: none;
+}
 
 #heading {
   text-align: center;

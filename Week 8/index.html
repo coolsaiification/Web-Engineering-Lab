@@ -22,7 +22,7 @@
       <div id="main">
         <div id="side">
           <img src="ASSETS/Books/adultery.jpeg" class="book-image">
-          <h3>Adultery</h3><p>Rs. 50</p>
+          <h3>Adultery</h3><p id="book1Amt">Rs. 50</p>
           <ul>
             <li>Rating: 4</li>
             <li>Publisher: XYZ</li>
@@ -30,11 +30,13 @@
           </ul>
         </div>
         <div id="desc">
-          <p>book based on web </p>
+          <p>A woman in her thirties begins to question her seemingly perfect life: she is married to a rich and loving husband, has well-behaved children and a successful newspaper career. Her apathy changes when she interviews a former boyfriend, now a successful politician. They begin a sadomasochistic affair that she finds very exciting. But she must now conquer that impossible love and redeem herself.</p>
         </div>
       </div>
       <div>
-        <button class="button">Add to cart</button>
+        <button onclick="addBook('book1')" class="button">Add to cart</button>
+        <button onclick="removeBook('book1')" class="button-remove" id="book1Remove">Remove</button>
+        <span class="quantity"><b id="book1">0</b> books in cart</span>
       </div>
     </li>
 
@@ -42,7 +44,7 @@
       <div id="main">
         <div id="side">
           <img src="ASSETS/Books/geronimo.jpeg" class="book-image">
-          <h3>Geronimo</h3><p>Rs. 50</p>
+          <h3>Geronimo</h3><p id="book2Amt">Rs. 80</p>
           <ul>
             <li>Rating: 4</li>
             <li>Publisher: XYZ</li>
@@ -50,11 +52,13 @@
           </ul>
         </div>
         <div id="desc">
-          <p>book based on web </p>
+          <p>In ALIEN ESCAPE, Geronimo Stiltonix's spaceship is in danger of exploding! The only solution is to replace the engine's batteries by tracking down a rare element. When a group of mysterious aliens claim they can help, Geronimo is relieved. But are the aliens as friendly as they seem?</p>
         </div>
       </div>
       <div>
-        <button class="button">Add to cart</button>
+        <button onclick="addBook('book2')" class="button">Add to cart</button>
+        <button onclick="removeBook('book2')" class="button-remove" id="book2Remove">Remove</button>
+        <span class="quantity"><b id="book2">0</b> books in cart</span>
       </div>
     </li>
 
@@ -62,7 +66,7 @@
       <div id="main">
         <div id="side">
           <img src="ASSETS/Books/life-or-death.jpeg" class="book-image">
-          <h3>Life or Death</h3><p>Rs. 50</p>
+          <h3>Life or Death</h3><p id="book3Amt">Rs. 100</p>
           <ul>
             <li>Rating: 4</li>
             <li>Publisher: XYZ</li>
@@ -70,17 +74,70 @@
           </ul>
         </div>
         <div id="desc">
-          <p>book based on web </p>
+          <p>Audie Palmer escapes from a Texas jail the day before the end of his ten-year sentence for armed robbery and second-degree murder. His friend Moss Webster is mysteriously released from the same prison and told to find Palmer and, if possible, the money missing from the robbery of the armoured van; money that has never been recovered.</p>
         </div>
       </div>
       <div>
-        <button class="button">Add to cart</button>
+        <button onclick="addBook('book3')" class="button">Add to cart</button>
+        <button onclick="removeBook('book3')" class="button-remove" id="book3Remove">Remove</button>
+        <span class="quantity"><b id="book3">0</b> books in cart</span>
       </div>
     </li>
   </ol>
+  <div class="total-amt">
+    Total Amount = Rs. <b id="finalAmt">0</b>
+  </div>
+  <div id="discount">Hurray!!! You have received a discount of 10% for shopping over Rs 500.</div>
   <footer>
     <span>Developed by: Sai</span>
     <span>Contact information: <a href="mailto:l.sainarayanan@gmail.com">l.sainarayanan@gmail.com</a>.</span>
   </footer>
 </body>
+<script>
+  var finalAmount=0
+  function addBook(bookName) {
+      var bookAmt = parseInt(document.getElementById(bookName+"Amt").innerHTML.substring(4), 10);
+      var value = parseInt(document.getElementById(bookName).innerHTML, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      if(value==1){
+        document.getElementById(bookName+"Remove").style.display = "inline-block"
+      }
+      if(value<=5){
+        document.getElementById(bookName).innerHTML = value;
+        finalAmount += bookAmt
+        if(finalAmount>=500){
+          document.getElementById("finalAmt").innerHTML = (finalAmount*80)/100;
+          document.getElementById("discount").style.display = "block"
+        }else{
+          document.getElementById("finalAmt").innerHTML = finalAmount;
+          document.getElementById("discount").style.display = "none"
+        }
+
+      }else{
+        alert("Only 5 books can be added to cart")
+      }
+  }
+
+  function removeBook(bookName) {
+    var bookAmt = parseInt(document.getElementById(bookName+"Amt").innerHTML.substring(4), 10);
+    var value = parseInt(document.getElementById(bookName).innerHTML, 10);
+    value = isNaN(value) ? 0 : value;
+    value--;
+    if (value==0){
+      document.getElementById(bookName+"Remove").style.display = "none"
+    }
+    if(value>=0){
+      document.getElementById(bookName).innerHTML = value;
+      finalAmount -= bookAmt
+      if(finalAmount>=500){
+        document.getElementById("finalAmt").innerHTML = (finalAmount*80)/100;
+        document.getElementById("discount").style.display = "block"
+      }else{
+        document.getElementById("finalAmt").innerHTML = finalAmount;
+        document.getElementById("discount").style.display = "none"
+      }
+    }
+  }
+</script>
 </html>
