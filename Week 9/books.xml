@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="index.xsl" type="text/xsl" ?>
+
+<book_list>
+
+<book>
+<name>Adultery</name>
+<image>adultery.jpeg</image>
+<price>50</price>
+<description>A woman in her thirties begins to question her seemingly perfect life: she is married to a rich and loving husband, has well-behaved children and a successful newspaper career. Her apathy changes when she interviews a former boyfriend, now a successful politician. They begin a sadomasochistic affair that she finds very exciting. But she must now conquer that impossible love and redeem herself.</description>
+<rating>3</rating>
+<publisher>ABC</publisher>
+<release>01/01/18</release>
+</book>
+
+<book>
+<name>Geronimo</name>
+<image>geronimo.jpeg</image>
+<price>80</price>
+<description>In ALIEN ESCAPE, Geronimo Stiltonix's spaceship is in danger of exploding! The only solution is to replace the engine's batteries by tracking down a rare element. When a group of mysterious aliens claim they can help, Geronimo is relieved. But are the aliens as friendly as they seem?</description>
+<rating>4</rating>
+<publisher>DEF</publisher>
+<release>02/01/18</release>
+</book>
+
+<book>
+<name>Life or Death</name>
+<image>life-or-death.jpeg</image>
+<price>100</price>
+<description>Audie Palmer escapes from a Texas jail the day before the end of his ten-year sentence for armed robbery and second-degree murder. His friend Moss Webster is mysteriously released from the same prison and told to find Palmer and, if possible, the money missing from the robbery of the armoured van; money that has never been recovered.</description>
+<rating>5</rating>
+<publisher>HIJ</publisher>
+<release>03/01/18</release>
+</book>
+
+</book_list>
